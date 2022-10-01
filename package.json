@@ -1,0 +1,23 @@
+{
+  "name": "dev-tools-api-v1",
+  "version": "1.0.1",
+  "description": "collection of API for developers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narendra-150/dev-tools-api-v1.git"
+  },
+  "keywords": [
+    "devtools",
+    "nodejs"
+  ],
+  "author": "Narendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narendra-150/dev-tools-api-v1/issues"
+  },
+  "homepage": "https://github.com/Narendra-150/dev-tools-api-v1#readme"
+}

@@ -1,0 +1,6 @@
+RUN npm install
+
+#**** Expose the port on which the app is listening for connections ****#
+EXPOSE 3000
+
+ENTRYPOINT ["node","app.js"]
