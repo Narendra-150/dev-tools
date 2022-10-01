@@ -1,5 +1,5 @@
 'use strict';
-const processMessage = require('./logic/process');
+const process = require('./logic/process');
 
 module.exports = (services) => {
 	return (req, res, next) => {
@@ -9,7 +9,7 @@ module.exports = (services) => {
 		});
 		let ipPrams=req.body || 'Test';
 
-		return processMessage(services, ipPrams)
+		return process(services, ipPrams)
 			.then((_) => {
 				res.status(200).send('Done');
 			})

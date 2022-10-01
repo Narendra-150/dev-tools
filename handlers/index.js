@@ -3,11 +3,16 @@
 const routes = require('express').Router({ mergeParams: true });
 
 module.exports = (services) => {
-    routes.use('/api/v1/demo', require('./demo')(services));
+  //dates  
+  routes.use('/api/dates/getnumberofdays', require('./dates/getnumberofdays')(services));
 
-    routes.get('/', (req, res) => {
-        res.status(200).json({ message: 'Connected!' });
-      });
+  //filesystem
+  routes.use('/api/filesystem/csvtodatabase', require('./filesystem/csvtodatabase')(services)); //to do
+  routes.use('/api/filesystem/jsontocsv', require('./filesystem/jsontocsv')(services)); //to do
 
-    return routes;
+  routes.get('/', (req, res) => {
+    res.status(200).json({ message: 'Connected!' });
+  });
+
+  return routes;
 };
