@@ -1,5 +1,5 @@
 const Promise = require('bluebird');
 
 module.exports = (context, data) => {
-	return Promise.resolve(data);
+	return Promise.resolve();
 };

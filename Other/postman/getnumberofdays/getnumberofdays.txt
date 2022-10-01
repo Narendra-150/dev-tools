@@ -1,0 +1,8 @@
+POST: http://localhost:3000/api/dates/getnumberofdays
+
+
+Body:
+{
+    "fromDate": "1/1/2022",
+    "toDate": "1/9/2022"
+}
