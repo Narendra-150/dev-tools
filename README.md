@@ -1,11 +1,7 @@
-to fix unknown user in git commit
-git config --global user.email "your mail"
-git config --global user.name "your name"
-
-
-# dev-tools
+# dev-tools-api-v1
 
 collection of API for developers
+
 
 
 # Run API
@@ -22,3 +18,12 @@ node app.js
 ```
 nodemon app.js
 ```
+=======
+
+
+
+### To fix unknown user in git commit
+
+git config --global user.email "your mail" 
+
+git config --global user.name "your name"
